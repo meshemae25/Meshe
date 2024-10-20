@@ -36,7 +36,7 @@ Route::post('/submit-answer', function (Request $request) {
 
         Log::warning('User submitted an incorrect label: ' . $answer);
 
-        return redirect()->back()->with('error', 'Incorrect label! Try again.');
+        return redirect()->back()->with('error', 'Incorrect! Try again.');
     }
 })->name('submitAnswer');
 
